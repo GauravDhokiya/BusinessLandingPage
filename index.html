@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <!-- <img src="./images/Logo.svg" alt="Logo"> -->
+            <img src="./images/logo-icon.svg" alt="Logo">
+            Logoipsum
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        All Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Pricing</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                    </ul>
+                </li>
+                <!-- Other menu items -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <div class="d-flex" id="hide-nav-btns-on-lg">
+                <button class="btn nav-btn" type="button">Sign In</button>
+                <button class="btn button" type="button">Get This Template</button>
+                <div class="form-check form-switch d-flex flex-column justify-content-center">
+                    <input class="form-check-input darkModeToggle" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="d-flex" id="hide-nav-btns-on-sm">
+            <div class="form-check form-switch d-flex flex-column justify-content-center">
+                <input class="form-check-input darkModeToggle" type="checkbox">
+            </div>
+            <button class="btn nav-btn" type="button">Sign In</button>
+            <button class="btn button" type="button">Get This Template</button>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- display on lg scrn only -->
+                        <div>
+                            <div class="heading heading-lg hide-heading-sm-scrn">Intelligent <img
+                                    src="./images/girl.svg" alt="girl-img">Tools for</div>
+                            <div class="heading heading-lg head-line-two hide-heading-sm-scrn"><img
+                                    src="./images/man.png" class="man-img" alt="man-img">Savvy Businesses</div>
+                        </div>
+                        <!-- display on sm scrn only -->
+                        <div class="heading-sm-scrn hide-heading-lg-scrn">Intelligent <img src="./images/girl.svg"
+                                class="girl-img" alt="girl-img"></div>
+                        <div class="d-flex head-line-two hide-heading-lg-scrn">
+                            <img src="./images/man.png" class="man-img " alt="man-img">
+                            <div class="d-flex flex-column">
+                                <span class="heading-sm-scrn">Tools for</span>
+                                <span class="heading-sm-scrn hs-head-text-3">Savvy Businesses</span>
+                            </div>
+                        </div>
+                        <!-- this para is common for both -->
+                        <p class="description p-max-width hero-section-description description-sm-scrn hero-sec-para-sm">
+                            FramerBite provides the essential elements for crafting a top-tier website for your SaaS
+                            platform.</p>
+                        <!-- display on large screen only  -->
+                        <div class="d-flex Sucsessed-clients-part sucess-client-part-hide-on-sm">
+                            <div>
+                                <button class="btn button">Get Started Now</button>
+                            </div>
+                            <div class="d-flex Sucsessed-clients">
+                                <div>
+                                    <img src="./images/clien-images.svg" alt="client images">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <span class="hero-sec-span1">3.2m</span>
+                                    <span class="hero-sec-span2">Sucsess clients</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- display on small screen only  -->
+                        <div class="d-flex flex-column text-center Sucsessed-clients-part sucess-client-part-hide-on-lg">
+                            <div>
+                                <img src="./images/clien-images.svg" class="client-images" alt="client images">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="hero-sec-span1">3.2m</span>
+                                <span class="hero-sec-span2">Sucsess clients</span>
+                            </div>
+                            <div>
+                                <button class="btn button button-sm-scrn">Get Started Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="businesses-detail-section">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <h1 class="heading-sm color-light-black businesses-head headingsm-sm-scrn">Join over 55,000
+                        businesses that have
+                        achieved their goals.
+                    </h1>
+                    <div class="box-shadow business-imgs-spacing-top-btm">
+                        <div class="d-flex businesses-imgs">
+                            <img src="./images/business-1.svg" alt="businesses-img" class="business-img">
+                            <img src="./images/business-2.svg" alt="businesses-img" class="business-img">
+                            <img src="./images/business-3.svg" alt="businesses-img" class="business-img">
+                            <img src="./images/business-4.svg" alt="businesses-img" class="business-img">
+                            <img src="./images/business-5.svg" alt="businesses-img" class="business-img">
+                            <img src="./images/business-6.svg" alt="businesses-img" class="business-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="assisting-section">
+            <div class="container">
+                <h1 class="heading heading-sm-scrn assist-sec-head">We're here to assist you in creating, managing</h1>
+                <div class="row assist-sec-card-first-row">
+                    <div class="col-md-5 card-bg">
+                        <div class="cards">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="card-title">Investment Fund</h3>
+                                <img src="./images/invest-fund-icon.svg" alt="icon" class="assist-sec-card-icons">
+                            </div>
+                            <p class="card-description">FramerBite delivers the essential components to build a
+                                polished and professional website for your SaaS business.</p>
+                            <div class="sub-card">
+                                <div>
+                                    <span class="color-black font-weight-500">Entertainment</span>
+                                    <div class="d-flex">
+                                        <span class="color-black font-weight-500 font-size-24">R2500.00</span>
+                                        <span class="color-red font-weight-500 pt-2 ms-2">+ 9.2%</span>
+                                    </div>
+                                    <p class="color-light-black font-weight-500 sub-card-para">You have spent more than
+                                        this month in
+                                        comparision to March 2020.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md card-bg mt-24">
+                        <div class="cards">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="card-title">Retirement Plan</h3>
+                                <img src="./images/retire-plan-icon.svg" alt="icon" class="assist-sec-card-icons">
+                            </div>
+                            <p class="card-description">FramerBite offers the essential building blocks for
+                                developing a sophisticated website for your SaaS, a well-established fact recognized by
+                                numerous desktop publishing packages and web page editors.</p>
+                            <div class="d-flex justify-content-evenly graph-imgs-margin ">
+                                <img src="./images/graph-img-1.svg" alt="graph-img" class="img-fluid">
+                                <img src="./images/graph-img-2.svg" alt="graph-img" class="hide-revenue-graph-onsm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mastercard-part card-bg">
+                    <div class="col-md">
+                        <div class="cards">
+                            <div class="d-flex flex-column align-items-start">
+                                <img src="./images/mastercard-icon.svg" alt="mastercard-icon" height="48"
+                                    class="assist-sec-card-icons" style="margin-bottom: 14px;">
+                                <h3 class="card-title mt-40 max-width-394 max-width-160-mob pb-24">Global Visa and
+                                    Mastercard with Multi-Currency Support</h3>
+                                <p class="card-description mt-26 max-width-394">FramerBite provides the necessary
+                                    elements for crafting
+                                    a
+                                    professional-grade website for your SaaS, acknowledged by various desktop publishing
+                                    tools</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex align-items-end justify-content-end">
+                        <div class="cards">
+                            <img src="./images/debit-card-img.svg" alt="debit-card-img" class="mt-4 img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section">
+            <div class="container">
+                <div class="row about-us-part">
+                    <div class="col-md-6 about-us-content">
+                        <span class="color-red sub-heading">ABOUT US</span>
+                        <h1 class="heading about-us-heading heading-sm-scrn">Embark on Your Digital </h1>
+                        <p class="description about-us-para description-sm-scrn">FramerBite offers the key components to
+                            build a
+                            professional-grade website for your SaaS, a fact well-known to readers familiar with the
+                            industry.</p>
+                        <button class="btn button-custom button-sm-scrn">More About Us</button>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <img src="./images/about-us-img.svg" alt="about-us-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client-review-section">
+            <div class="container">
+                <div class="row p-61">
+                    <div class="col-md-4 d-flex flex-column gap-20 thought-cards">
+                        <div class="d-flex align-items-center thought-card active background-gray " data-tab="founder">
+                            <img src="./images/FOUNDER.svg" alt="FOUNDER">
+                            <div class="d-flex flex-column">
+                                <span class="color-black name">Catherine Bennett</span>
+                                <span class="color-light-black role">Founder, Creative</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center thought-card" data-tab="designer">
+                            <img src="./images/DESIGNER.svg" alt="DESIGNER">
+                            <div class="d-flex flex-column">
+                                <span class="color-black name">Tony Danza</span>
+                                <span class="color-light-black role">Designer, Creative</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center thought-card" data-tab="aigc">
+                            <img src="./images/AICG.svg" alt="AICG">
+                            <div class="d-flex flex-column">
+                                <span class="color-black name">Mike Torello</span>
+                                <span class="color-light-black role">AIGC, Creative</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 review" id="founder">
+                        <div class="d-flex justify-content-between commas">
+                            <img src="./images/double-inverted-comma-top.svg" class="comma-1">
+                            <img src="./images/double-inverted-comma-bottom.svg" class="comma-2">
+                        </div>
+                        <h1 class="heading-sm color-black thought-desc headingsm-sm-scrn">Initially doubtful, the
+                            outcome surpassed all my anticipations. The powerful analytics and reporting features
+                            offered crucial perspectives on our business metrics, <span
+                                class="color-light-black">enabling us to implement informed</span></h1>
+                    </div>
+                    <div class="col-md-8 review" id="designer">
+                        <div style="height: 70px;"></div>
+                        <h1 class="heading-sm color-black thought-desc headingsm-sm-scrn">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Debitis recusandae minima quae qui soluta quas voluptatibus,
+                            nemo earum temporibus ipsa odit quaerat. Id laboriosam ducimus praesentium magnam? Enim,
+                            optio rerum.</h1>
+                    </div>
+                    <div class="col-md-8 review" id="aigc">
+                        <div style="height: 70px;"></div>
+                        <h1 class="heading-sm color-black thought-desc headingsm-sm-scrn">Neque possimus labore repellat
+                            maxime quam nulla reiciendis itaque nisi ullam distinctio! Ea dolorum enim eveniet
+                            laudantium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident corrupti
+                            reprehenderit asperiores? Corrupti, cum fugit!</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="global-reports-section">
+            <div class="container">
+                <div class="row p-48 gap-63 gap-66-mob">
+                    <div class="col-md d-flex flex-column align-items-center p-unset">
+                        <span class="global-report-head-text">300+</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/partner-icon.svg">
+                            <span class="gr-sec-text">Partner with us</span>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
+                        <span class="global-report-head-text">$3.2b+</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/money-icon.svg">
+                            <span class="gr-sec-text">Cumulative trending</span>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
+                        <span class="global-report-head-text">860k</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/succes-prj-icon.svg">
+                            <span class="gr-sec-text">Successful projects</span>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
+                        <span class="global-report-head-text">1.6%</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/intrest-rate-icon.svg">
+                            <span>Low interest rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="xb-innovation-section">
+            <div class="container">
+                <div class="row d-flex align-items-center p-48 pt-27-mob pb-unset-mob">
+                    <div class="col-md">
+                        <img src="./images/xb-inovation.svg" class="img-fluid">
+                    </div>
+                    <div class="col-md xb-inno-sec-content">
+                        <h1 class="heading heading-sm-scrn">Pave your path to triumph with XB innovation.</h1>
+                        <p class="description description-sm-scrn xb-inno-sec-para max-width">X equips you with the
+                            essential tools to craft
+                            a genuinely professional SaaS website.</p>
+                        <div class="d-flex flex-column lists pt-64">
+                            <div class="d-flex g-14">
+                                <img src="./images/right.svg">
+                                <span class="list-text">Effortless Browsing</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="./images/right.svg">
+                                <span class="list-text">Secure Top 5% Industry Experts for Your Project</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="./images/right.svg">
+                                <span class="list-text">Secure Transaction Platform</span>
+                            </div>
+                        </div>
+                        <button class="btn button button-sm-scrn more-about-us-btn">More About Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-color download-our-app-section">
+            <div class="container">
+                <div class="row p-95">
+                    <div class="col-md-6 d-flex align-items-end iphone-img">
+                        <img src="./images/iphone.svg" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 download-our-app-content">
+                        <h1 class="heading heading-sm-scrn">Download our mobile app</h1>
+                        <p class="description description-sm-scrn pt-32 max-width pt-32-mob">X provides you with the
+                            essential toolkit to develop a
+                            genuinely polished website</p>
+                        <div class="d-flex flex-column pt-32 lists">
+                            <div class="d-flex g-14">
+                                <img src="./images/right.svg">
+                                <span class="list-text">Effortless Browsing</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="./images/right.svg">
+                                <span class="list-text">Secure Top 5% Industry Experts for Your Project</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="./images/right.svg">
+                                <span class="list-text">WeChat & live chat</span>
+                            </div>
+                        </div>
+                        <div class="d-flex g-20 p-imgs pt-34-mob justify-content-center">
+                            <img src="./images/download-on-app-store.svg" class="stores-img">
+                            <img src="./images/download-on-playstore.svg" class="stores-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accelerate-business-growth-section">
+            <div class="d-flex flex-column align-items-center p-abgs">
+                <h1 class="heading heading-sm-scrn">Accelerate Your Business Growth</h1>
+                <p class="custom-description description-sm-scrn accelerate-desc text-center abgs-para">FramerBite
+                    supplies the key
+                    components for assembling a top-tier website tailored to your SaaS needs.</p>
+                <form class="input-field">
+                    <input type="email" placeholder="Enter Your Email" class="form-control input">
+                    <button type="submit" class="btn button email-btn">Email Me</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-start">
+                            <!-- <img src="./images/Logo.svg" class="img-fluid logo"> -->
+                            <a class="footer-logo d-flex align-items-center" href="#">
+                                <img src="./images/logo-icon.svg" alt="Logo">
+                                Logoipsum
+                            </a>
+                            <div class="footer-desc">
+                                <p class="mb-0 description-sm-scrn">XB gives you the blocks</p>
+                                <p class="mb-0 description-sm-scrn">needed to create a truly professional</p>
+                                <p class="mb-0 description-sm-scrn">website for your SaaS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-52-mob">
+                        <span class="color-mid-black">Solutions</span>
+                        <span>Freelancer</span>
+                        <span>Data Analytics</span>
+                        <span>Small Business</span>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-46-mob">
+                        <span class="color-mid-black">Company</span>
+                        <span>About</span>
+                        <span>Career</span>
+                        <span>Contact</span>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-46-mob">
+                        <span class="color-mid-black">Resource</span>
+                        <span>Customers</span>
+                        <span>Strategic Finance</span>
+                        <span>Ebooks & Guides</span>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-46-mob">
+                        <span class="color-mid-black">Features</span>
+                        <span>Freelancer</span>
+                        <span>Data Analytics</span>
+                        <span>Small Business</span>
+                    </div>
+                </div>
+                <p class="color-light-black mt-56 mb-0 copyright-text">Copyright © 2023 All Rights Reserved
+                    by XB</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        let darkModeToggles = document.querySelectorAll('.darkModeToggle');
+        console.log(darkModeToggles)
+        darkModeToggles.forEach(function (toggle)   {
+            toggle.addEventListener('change', function () {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+        var width = screen.width
+        if (width <= 768) {
+            $(".about-us-content").addClass("order-2")
+        }
+
+        $('.review').addClass('d-none')
+        $('#founder').removeClass('d-none')
+        $('.thought-card').click(function () {
+            $('.thought-card').removeClass('active')
+            $('.thought-card').removeClass('background-gray')
+            $('.review').addClass('d-none')
+            var tab = $(this).data("tab");
+            $(this).addClass("active");
+            $(this).addClass("background-gray");
+            $("#" + tab).removeClass("d-none");
+        })
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

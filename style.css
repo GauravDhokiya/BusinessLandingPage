@@ -1,0 +1,133 @@
+.nav-link {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.nav-btn {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero-section {
+    background-image: url('./images/hero-section-bg.png');
+}
+.card-bg {
+    background: linear-gradient(155.69deg, #F6F6F9 4.54%, #EEEEF5 98.56%),linear-gradient(0deg, #E1E1E9, #E1E1E9);
+    border-radius: 12px;
+    border: 2px solid #E1E1E9
+}
+.sub-card > div{
+    background-color: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+}
+.lists{
+    gap: 18px;
+}
+.thought-card{
+    cursor: pointer;
+}
+.navbar-brand{
+    font-size: 26px;
+    font-weight: 800;
+    gap: 10px;
+}
+.footer-logo{
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+
+
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #FFFFFF;
+}
+body.dark-mode .navbar-bg{
+    background-color: #1c1c1c;
+}
+body.dark-mode .nav-link{
+    color: #FFFFFF;
+}
+body.dark-mode .navbar-brand{
+    color: #FFFFFF;
+}
+body.dark-mode .nav-btn{
+    color: #FFFFFF;
+}
+body.dark-mode .heading{
+    color: #FFFFFF;
+}
+body.dark-mode .heading-sm{
+    color: #FFFFFF;
+}
+body.dark-mode .heading-sm-scrn{
+    color: #FFFFFF;
+}
+body.dark-mode .hero-sec-span1{
+    color: #FFFFFF;
+}
+body.dark-mode .hero-sec-span2{
+    color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .description{
+    color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .custom-description{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .card-bg{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+body.dark-mode .card-title{
+    color: #FFFFFF;
+}
+body.dark-mode .card-description{
+    color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .list-text{
+    color: #FFFFFF;
+}
+body.dark-mode .bg-color{
+    background: rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .footer{
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .color-mid-black{
+    color: #FFFFFF;
+}
+body.dark-mode .copyright-text{
+    color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .footer-logo{
+    color: #FFFFFF;
+    gap: 10px;
+    text-decoration: none;
+}
+body.dark-mode .input{
+    background: linear-gradient(0deg, #BFBFC5, #BFBFC5),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(191, 191, 197, 1);
+}
+body.dark-mode .name{
+    color: #FFFFFF;
+}
+body.dark-mode .role{
+    color: rgba(255, 255, 255, 0.6);
+}
+body.dark-mode .background-gray{
+    background: rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .navbar-toggler-icon{
+    background-image: url("./images/menu.png");
+}   
+body.dark-mode .business-img{
+    background-color: #FFFFFF;
+}
